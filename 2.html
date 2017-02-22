@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="1.css">
+	<script type="text/javascript" src="1.js"></script>
+</head>
+<body>
+	
+	<div id="content">
+		<div class="back"> <span onclick="javascript:window.location.href='index.html'">&nbsp;<&nbsp;</span></div>
+		<div class="head">玩家比配</div>
+			
+		<div id="block1" class="block-big">
+			<img src="icon1">杀手<span id="killer">&nbsp;&nbsp;</span>人<br/><br/>
+			<img src="icon2">平民<span id="villager">&nbsp;&nbsp;</span>人<br/><br/>
+			警察<span id="cop">&nbsp;&nbsp;</span>人
+		</div>
+		<div id="block2" class="block"></div>
+		<div id="block3" class="block">
+		<strong>请选择玩家数量</strong>
+		<input id="number" type="text" value="" style="width:20px;" onblur="checknumber()">
+		<span>玩家数量为4-18</span>
+		<!-- 这里不能用p标签。p 元素会自动在其前后创建一些空白
+		会导致不会在一行上面 -->
+		</div> 
+
+		<div class="foot" onclick="idallocation()">去发牌</div>
+	</div>
+	
+</body>
+</html>

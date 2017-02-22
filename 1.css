@@ -1,0 +1,182 @@
+#btn1{
+	width: 450px;
+	height: 80px;
+	border: 1px solid;
+	border-color: blue;
+	text-align: center;
+	margin: 0 auto;
+	line-height:80px;
+	margin-bottom: 15px;
+}
+#content{
+	 width: 450px; 
+	height: 700px;
+	border: 5px solid;
+	border-color: red;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	padding-right:5px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#content-middle{
+	width: 450px;
+	height: 600px;
+	border: 5px solid;
+	border-color: red;
+	
+	text-align: center;
+	margin: 0 auto;
+}
+
+#content-middle-head{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 2px solid;/* 下划线 */
+	border-bottom-color: green;
+
+}
+#content-middle-content{
+	width: 450px;
+	height: 500px;
+	border: 2px solid;
+	border-color: red;
+}
+
+.box{
+	width: 300px;
+	height: 80px;
+	border: 1px solid;
+	border-color: blue;
+	text-align: center;
+	vertical-align:middle;
+	margin: 0 auto;/* 对于外部居中 */
+	line-height: 80px;/* 只要将这个属性设置的与高度一样，就可以实现垂直文字居中 */
+}
+
+.blank{
+	width: 450px;
+	height: 80px;
+	border: 1px solid;
+	border-color: blue;
+	line-height: 80px;/* 只要将这个属性设置的与高度一样，就可以实现垂直文字居中 */
+}
+
+/* 2.html */
+
+.block{
+	width: 450px;
+	height:100px;
+	border: 1px solid;
+	border-color: blue;
+	margin-bottom: 5px; 
+	text-align: center;  
+	line-height: 100px;
+	 
+}
+.block-big{
+	width: 450px;
+	height:200px;
+	border: 1px solid;
+	border-color: blue;
+	margin-bottom: 5px; 
+	text-align: center;  
+	padding-top: 20px;
+	/* line-height: 200px; */
+}
+.head{
+	width: 450px;
+	height: 50px;
+	border: 1px solid;
+	border-color: blue;
+	margin-bottom: 5px; 
+	margin-top:20px; 
+	text-align: center;  
+	line-height: 50px;
+}
+.foot{
+	width: 450px;
+	height: 75px;
+	background-color: orange;
+	text-align: center; 
+	line-height: 75px;
+}
+.block span{
+	color: red;
+}
+.back{
+	margin-bottom: 1px; 
+	width: 450px;
+	background: blue;
+	height: 50px;
+	font-size: 40px;/* 字体大小 */
+	text-align: left;
+	font-weight: bold;/* 字体粗体 */
+	
+}
+
+.contentbody{
+	background: blue;
+	width: 350px;
+	height: 550px;
+	padding: 50px;/* 显示的大小为（width+padding-left:+padding-right） */
+	padding-top:25px; 
+}
+.card{
+
+	width: 350px;
+	height: 450px;
+	background: #A2875E;
+	margin-top: -25px;
+	display: table; 
+
+	z-index:9;z-index /*堆叠顺序。拥有更高堆叠顺序的元素总是会处于堆叠顺序较低的元素的前面。*/
+	position:relative;/* 必须加上相对定位才生效 */
+}
+
+.littlecircular{
+	background: white;
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;/* 半径要跟它一半大为圆形 */
+	margin-left:   auto;
+	margin-right: auto;
+
+	/* 文字垂直与水平居中 */
+	text-align: center;
+	line-height: 50px;
+	font-weight: bold;/* 字体粗体 */
+	color: red;
+
+	z-index:10;
+	position:relative;
+
+}
+
+/* 让图片居中：
+首先在图片外面，套上一个span，然后将外面的div设置为表格，span标签设置为各子，它就水平自动居中
+然后用vertical-align: middle; 它就垂直也居中了。 
+单用vertical-align: middle起不了效果*/
+.card span{
+	 display:table-cell; 
+	vertical-align: middle;
+}
+.card span img{
+	width: 200px;
+	height: 200px;
+}
+
+.viewbottom{
+	margin-top:50px; 
+	width: 350px;
+	height: 50px;
+	background: orange;
+
+	text-align: center;
+	line-height: 50px;
+	font-weight: bold;/* 字体粗体 */
+	color: white;/* 这就是文字的颜色 */
+}
